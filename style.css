@@ -1,0 +1,63 @@
+nav
+{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid black;
+    align-items: center;
+    background-color: white;
+}
+
+nav a
+{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0px;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: background-color 0.5s, scale 0.5s;
+}
+
+nav a:hover
+{
+    background-color: rgb(196, 196, 196);
+}
+
+nav h1
+{
+    margin-left: 10px;
+}
+
+*
+{
+    text-decoration: none;
+    color: black;
+    margin: 0px;
+}
+
+main
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+article
+{
+    max-width: 1000px;
+}
+
+img
+{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgb(185, 185, 185);
+    margin-top: 10px;
+}
+
+p
+{
+    margin-top: 10px;
+}
