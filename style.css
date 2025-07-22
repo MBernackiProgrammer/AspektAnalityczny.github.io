@@ -1,23 +1,39 @@
-html
-{
-    height: 100%;
-    width: 100%;
+header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
 
-body
-{
-    height: 100%;
-    width: 100%;
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1vw 1vw 2vw grey;
+}
+nav a {
+  width: 25%;
+  height: 2.5vh;
+  border: 1px solid black;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.8vh;
+  text-transform: uppercase;
+  transition: all 1s;
+}
+nav a:hover {
+  letter-spacing: 0.2vw;
 }
 
 
-*
-{
-    text-decoration: none;
-    color: black;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 main
 {
@@ -80,4 +96,8 @@ p
 .articleText
 {
     flex:1;
+}
+
+li{
+  padding: 0.5rem 0;
 }
