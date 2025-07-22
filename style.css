@@ -32,45 +32,67 @@ nav a:hover {
   letter-spacing: 0.2vw;
 }
 
-
-
-
-main
-{
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+main {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-article
-{
-    max-width: 1000px;
-    display: flex;
+article {
+  max-width: 1000px;
+  display: flex;
 }
 
-.articleImg
-{
-    flex: 1;
-    overflow: hidden;
+.articleImg {
+  flex: 1;
+  overflow: hidden;
 }
 
-.articleImg img
-{
-    flex: 1;
-    border-radius: 20px;
-    border: 1px solid rgb(185, 185, 185);
-    margin-top: 10px;
-    margin-right: 10px;
-    display: flex;
-    width: 100%;
+.articleImg img {
+  flex: 1;
+  border-radius: 20px;
+  border: 1px solid rgb(185, 185, 185);
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+  width: 100%;
 }
 
-p
-{
-    margin-top: 10px;
+p {
+  margin-top: 10px;
 }
 
-.articleText
-{
-    flex:1;
+.articleText {
+  flex: 1;
+}
+
+.graficzka {
+  position: relative;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4vh;
+  overflow: visible;
+}
+
+.graficzka img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.graficzka p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33vw;
+  height: 12vh;
+  position: absolute;
+  bottom: -8vh;
+  left: -10vw;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid blue;
+  border-radius: 1vh;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-size: 4vh;
 }
