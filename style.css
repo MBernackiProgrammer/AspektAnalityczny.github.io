@@ -31,3 +31,46 @@ nav a {
 nav a:hover {
   letter-spacing: 0.2vw;
 }
+
+
+
+
+main
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+article
+{
+    max-width: 1000px;
+    display: flex;
+}
+
+.articleImg
+{
+    flex: 1;
+    overflow: hidden;
+}
+
+.articleImg img
+{
+    flex: 1;
+    border-radius: 20px;
+    border: 1px solid rgb(185, 185, 185);
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    width: 100%;
+}
+
+p
+{
+    margin-top: 10px;
+}
+
+.articleText
+{
+    flex:1;
+}
