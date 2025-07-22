@@ -39,7 +39,6 @@
             let obiad = localStorage.getItem("obiad");
 
             let x2 = obiad.split("^")[0];
-            document.getElementById("piesImg").src = x2;
             console.log(x2);
 
             let x = 10;
@@ -51,9 +50,10 @@
 
             if (diffInSeconds > x) {
                 console.log("Cache expired, loading new obiad.");
+                alert("Załadowane");
                 loadObiad();
             } else {
-                console.log("Using cached obiad. Time remaining:", x - diffInSeconds, "seconds.");
+                document.getElementById("piesImg").src = x2;
             }
         } else {
             loadObiad();
