@@ -1,3 +1,10 @@
+html,body
+{
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -8,13 +15,14 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+  height: 120px;
 }
 
 nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-  box-shadow: 1vw 1vw 2vw grey;
+  
 }
 nav a {
   width: 25%;
@@ -31,18 +39,29 @@ nav a {
 }
 nav a:hover {
   letter-spacing: 0.2vw;
+  box-shadow: 1vw 1vw 2vw grey;
 }
 
-main {
-  padding: 2vw;
-  display: flex;
-  justify-content: space-between;
-  gap: 2vw;
+main
+{
+    height: calc(100% - 120px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    box-sizing: border-box;
 }
 
-article {
-  max-width: 1000px;
-  display: flex;
+article
+{
+    max-width: 1000px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top:10px;
 }
 
 .articleImg {
@@ -112,4 +131,31 @@ p {
   font-weight: bold;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   font-size: 4vh;
+}
+=======
+article h1
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+hr
+{
+    margin-bottom: 1rem;
+}
+
+p
+{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.articleText
+{
+    flex:1;
+}
+
+li{
+  padding: 0.5rem 0;
 }
