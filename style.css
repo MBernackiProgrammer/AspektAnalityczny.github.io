@@ -1,40 +1,9 @@
-nav
-{
-    display: flex;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    border-bottom: 1px solid black;
-    align-items: center;
-    background-color: white;
-}
-
-nav a
-{
-    padding: 10px;
-    margin: 10px;
-    margin-left: 0px;
-    border: 1px solid;
-    border-radius: 10px;
-    transition: background-color 0.5s, scale 0.5s;
-}
-
-nav a:hover
-{
-    background-color: rgb(196, 196, 196);
-}
-
-nav h1
-{
-    margin-left: 10px;
-}
-
 *
 {
     text-decoration: none;
     color: black;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main
@@ -67,9 +36,27 @@ article
     width: 100%;
 }
 
+article
+{
+
+}
+
+article h1
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+hr
+{
+    margin-bottom: 1rem;
+}
+
 p
 {
     margin-top: 10px;
+    text-align: justify;
 }
 
 .articleText
