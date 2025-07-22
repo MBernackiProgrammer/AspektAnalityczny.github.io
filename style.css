@@ -121,6 +121,7 @@ p {
   flex-direction: column;
   gap: 2vh;
   align-items: flex-end;
+  margin-left: 20px;
 }
 
 .graficzka {
