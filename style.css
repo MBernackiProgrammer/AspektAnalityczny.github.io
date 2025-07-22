@@ -47,17 +47,32 @@ main
 article
 {
     max-width: 1000px;
+    display: flex;
 }
 
-img
+.articleImg
 {
-    width: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.articleImg img
+{
+    flex: 1;
     border-radius: 20px;
     border: 1px solid rgb(185, 185, 185);
     margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    width: 100%;
 }
 
 p
 {
     margin-top: 10px;
+}
+
+.articleText
+{
+    flex:1;
 }

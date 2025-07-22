@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <h1>It's index</h1>
+
+        <div style="flex: 1;"></div>
+
+        <a href="./index.html">to index</a>
+        <a href="./species.html">to species</a>
+    </nav>
+
+    <main>
+        <article>
+            <div class="articleImg">
+                <img id="piesImg">
+            </div>
+
+            <div style="width: 10px;"></div>
+
+            <div class="articleText">
+                <h1>Kundel w Cieście Francuskim na Słodko-Kwaśno</h1>
+                <p>Przedstawiamy Państwu nasz najnowszy kulinarny hit, stworzony z myślą o tych, którzy cenią sobie... nietypowe doznania! "Kundel w Cieście Francuskim na Słodko-Kwaśno" to danie, które z pewnością zapisze się w annałach jako jedno z najbardziej… oryginalnych. Zaczynamy od starannie wyselekcjonowanego, świeżego kundelka – najlepiej takiego o wesołym usposobieniu, co ponoć przekłada się na soczystość mięsa. Zwierzak jest delikatnie pieczony w całości, a następnie marynowany w naszej sekretnej, autorskiej mieszance sosu hoisin, octu balsamicznego i odrobiny syropu klonowego, co nadaje mu ten niepowtarzalny, słodko-kwaśny posmak. Następnie nasz czworonożny bohater zostaje zręcznie owinięty w chrupiące ciasto francuskie, które podczas pieczenia tworzy złocistą, maślaną skorupkę. Całość podana jest na łożu z karmelizowanej cebuli i prażonych orzechów nerkowca, co dodaje tekstury i subtelnej słodyczy. Całość dekorujemy świeżymi pędami bambusa i puszystą pianką z trawy cytrynowej – dla tych, którzy cenią sobie artystyczne wykończenie. To danie to prawdziwa gratka dla odważnych smakoszy i tych, którzy szukają nowych doznań kulinarnych. Pamiętajcie jednak, że jest to danie wyłącznie humorystyczne i zmyślone – żaden pies nie ucierpiał podczas jego "tworzenia"!</p>
+                
+            </div>
+
+        </article>
+    </main>
+
+    <script>
+        fetch('https://dog.ceo/api/breeds/image/random')
+        .then(response => response.json())
+        .then(data => {
+            const imageUrl = data.message;
+            console.log('URL obrazka psa:', imageUrl);
+
+            document.getElementById("piesImg").src = imageUrl;
+        })
+        .catch(error => {
+            console.error('Błąd podczas pobierania danych:', error);
+        });
+
+    </script>
+</body>
+</html>
