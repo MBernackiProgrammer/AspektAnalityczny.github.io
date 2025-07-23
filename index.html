@@ -48,5 +48,34 @@
         </div>
       </div>
     </main>
+
+    <input id="searchQuerry">
+    <button onclick="openGoogle()">Open window</button>
   </body>
+
+  <script>
+    function openGoogle()
+    {
+        let querry = document.getElementById("searchQuerry").value;
+
+        let allElements = querry.split(" ");
+
+        let fullQUerry = ""
+
+        allElements.forEach(element => {
+            if(fullQUerry == "")
+            {
+                fullQUerry = element; 
+            }
+            else
+            {
+                fullQUerry = fullQUerry + "+" + element; 
+            }
+        });
+
+        console.log(fullQUerry);
+
+        window.open("https://www.google.com/search?q=" + fullQUerry);
+    }
+  </script>
 </html>
