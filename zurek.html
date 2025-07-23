@@ -6,6 +6,10 @@
     <title>Żurek</title>
 
     <link rel="stylesheet" href="./style.css">
+    <script src="./portion_calculating.js"></script>
+    <script>
+        const baseNumberOfPortions = 6;
+    </script>
 </head>
 <body>
     <header>
@@ -45,36 +49,36 @@
                 </p>
 
                 <h2>
-                    Składniki do przygotowania żurku (6-8 porcji)
+                    Składniki do przygotowania żurku (6 porcji)
                 </h2>
                 <p>
-                    <ol>
+                    <ul>
                         <li>
-                            2 litry bulionu                            
+                            <span id="i1">2</span> litry bulionu                            
                         </li>
                         <li>
-                            500 ml zakwasu żytniego                            
+                            <span id="i2">500</span> ml zakwasu żytniego                            
                         </li>
                         <li>
-                            cztery białe kiełbasy (surowe)                            
+                            <span id="i3">4</span> białe kiełbasy (surowe)                            
                         </li>
                         <li>
-                            200 g boczku                            
+                            <span id="i4">200</span> g boczku                            
                         </li>
                         <li>
-                            1 duża cebula                            
+                            <span id="i5">1</span> duża cebula                            
                         </li>
                         <li>
-                            2 łyżeczki chrzanu                            
+                            <span id="i6">2</span> łyżeczki chrzanu                            
                         </li>
                         <li>
-                            1 ząbek czosnku                            
+                            <span id="i7">1</span> ząbek czosnku                            
                         </li>
                         <li>
-                            3 łyżki śmietany 30% lub 36%
+                            <span id="i8">3</span> łyżki śmietany 30% lub 36%
                         </li>
                         <li>
-                            suszony, starty majeranek
+                            <span id="i9">1</span>suszony, starty majeranek
                         </li>
                         <li>
                             sól i pieprz do smaku
@@ -82,9 +86,52 @@
                         <li>
                             do podania ugotowane na twardo jajka
                         </li>
-                    </ol>
+                    </ul>
                     
                 </p>
+
+                <h2>
+                    Ile składników potrzebuję?
+                </h2>
+                <p>
+                    Ilość porcji <input type="number" name="quantity" id="quantity" onchange="calculate(baseNumberOfPortions, 9)" value="6">
+                </p>
+
+                <ul>
+                    <li>
+                        <span id="q1">2</span> litry bulionu                            
+                    </li>
+                    <li>
+                        <span id="q2">500</span> ml zakwasu żytniego                            
+                    </li>
+                    <li>
+                        <span id="q3">4</span> białe kiełbasy (surowe)                            
+                    </li>
+                    <li>
+                        <span id="q4">200</span> g boczku                            
+                    </li>
+                    <li>
+                        <span id="q5">1</span> duża cebula                            
+                    </li>
+                    <li>
+                        <span id="q6">2</span> łyżeczki chrzanu                            
+                    </li>
+                    <li>
+                        <span id="q7">1</span> ząbek czosnku                            
+                    </li>
+                    <li>
+                        <span id="q8">3</span> łyżki śmietany 30% lub 36%
+                    </li>
+                    <li>
+                        <span id="q9">1</span> suszony, starty majeranek
+                    </li>
+                    <li>
+                        sól i pieprz do smaku
+                    </li>
+                    <li>
+                        do podania ugotowane na twardo jajka
+                    </li>
+                </ul>
 
             </div>
 
