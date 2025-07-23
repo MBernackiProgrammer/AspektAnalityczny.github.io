@@ -10,7 +10,7 @@
 
     <body>
         <header>
-          <h1>Dania Polszy</h1>
+          <h1><a href="index.html" style="text-decoration: none;color:black;">Tradycyjne dania z Polski</a></h1>
           <nav>
             <a href="./bigos.html"style="box-shadow: 1vw 1vw 2vw grey;">Bigos</a>
             <a href="./pierogi.html">Pierogi</a>
@@ -54,6 +54,17 @@
                         Przepis na bigos
                     </h2>
 
+                    <form>
+                        <label for="amount_of_people">Ilość osób jaka chce zjeść bigos:</label>
+                        <input type="number" id="amount_of_people" name="amount_of_people" min="1" max="100" value="5">
+                        <input type="button" value="Oblicz ilość składników" onclick="generate_dish_recipe()">
+                    </form>
+
+                    <p id="generate_dish_recipe">
+
+                    </p>
+
+
                     <p>
                         <h3>
                             Składniki dla 4-6 osób:
@@ -88,5 +99,12 @@
                     </p>
             </article>
         </main>
+        <script>
+            function generate_dish_recipe()
+            {
+                var amount_of_people = document.getElementById("amount_of_people").value;
+                
+            }
+        </script>
     </body>
 </html>
