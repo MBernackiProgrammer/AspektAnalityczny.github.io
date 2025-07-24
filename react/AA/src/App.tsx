@@ -1,21 +1,32 @@
-import { useState } from 'react'
+
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
 import './App.css'
+import Index from './components/page';
+import Bigos from './components/page/bigos';
+import Golabki from './components/page/golabki';
+import Pierogi from './components/page/pierogi';
+import Zurek from './components/page/zurek';
+import Layout from "./Layout";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <header>
-      <h1><a href="index.html" >Dania Polszy</a></h1>
-      <nav>
-        <a href="./bigos.html">Bigos</a>
-        <a href="./pierogi.html">Pierogi</a>
-        <a href="./golabki.html">Gołąbki</a>
-        <a href="./zurek.html">Żurek</a>
-      </nav>
-    </header>
+
+    <BrowserRouter>
+      <Routes>
+
+        <Route path='/' element={<Layout></Layout>}>
+          <Route index element={<Index></Index>}></Route>
+          <Route path='bigos' element={<Bigos></Bigos>}></Route>
+          <Route path='golabki' element={<Golabki></Golabki>}></Route>
+          <Route path='pierogi' element={<Pierogi></Pierogi>}></Route>
+          <Route path='zurek' element={<Zurek></Zurek>}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+      
     </>
   )
 }
