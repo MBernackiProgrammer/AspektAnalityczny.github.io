@@ -17,7 +17,7 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        <Route path='/' element={<Layout></Layout>}>
+        <Route path='/AspektAnalityczny.github.io/' element={<Layout></Layout>}>
           <Route index element={<Index></Index>}></Route>
           <Route path='bigos' element={<Bigos></Bigos>}></Route>
           <Route path='golabki' element={<Golabki></Golabki>}></Route>
