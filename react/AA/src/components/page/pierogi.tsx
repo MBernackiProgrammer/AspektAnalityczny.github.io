@@ -7,7 +7,7 @@ export default function Pierogi(){
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Pierogi_in_Warsaw%2C_2019.jpg/500px-Pierogi_in_Warsaw%2C_2019.jpg"/>
             </div>
 
-            <div style={{width: "50px;"}}></div>
+            <div style={{width: "50px"}}></div>
 
             <div className="articleText">
                 <p>
