@@ -1,6 +1,4 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import './App.css'
 import Index from './components/page';
 import Bigos from './components/page/bigos';
@@ -13,20 +11,17 @@ function App() {
 
   return (
     <>
-
-    <BrowserRouter>
+    <BrowserRouter >
       <Routes>
-
-        <Route path='/AspektAnalityczny.github.io/' element={<Layout></Layout>}>
-          <Route index element={<Index></Index>}></Route>
-          <Route path='bigos' element={<Bigos></Bigos>}></Route>
-          <Route path='golabki' element={<Golabki></Golabki>}></Route>
-          <Route path='pierogi' element={<Pierogi></Pierogi>}></Route>
-          <Route path='zurek' element={<Zurek></Zurek>}></Route>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Index />} />
+          <Route path='bigos' element={<Bigos />} />
+          <Route path='golabki' element={<Golabki />} />
+          <Route path='pierogi' element={<Pierogi />} />
+          <Route path='zurek' element={<Zurek />} />
         </Route>
       </Routes>
     </BrowserRouter>
-      
     </>
   )
 }
