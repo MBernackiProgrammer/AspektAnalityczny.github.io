@@ -5,10 +5,10 @@ export default function Bigos(){
             <main>
                 <article>
                     <div className="articleImg">
-                        <img src="./images/bigos.jpg" alt="Bigos"/>
+                        <img src="./bigos.jpg" alt="Bigos"/>
                     </div>
 
-                    <div style={{width: "10px;"}}></div>
+                    <div style={{width: "50px"}}></div>
 
                     <div className="articleText">
                         <h1>Bigos</h1>

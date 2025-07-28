@@ -25,7 +25,7 @@ export default function Zurek(){
                 <img src="https://www.kwestiasmaku.com/sites/v123.kwestiasmaku.com/files/zurek_01_1.jpg"/>
             </div>
 
-            <div style={{width: "50px;"}}></div>
+            <div style={{width: "50px"}}></div>
 
             <div className="articleText">
                 <p>
